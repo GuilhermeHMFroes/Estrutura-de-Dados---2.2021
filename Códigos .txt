@@ -1,0 +1,180 @@
+#import pandas as pd
+
+#confirmados = pd.read_excel(r"Planilhas/CONFIRMADOS.csv")
+
+#import csv
+
+#confirmados = open('Planilhas/CONFIRMADOS.csv', 'rb')
+#reader = csv.reader(confirmados)
+
+#for linha in reader:
+#    print(linha)
+
+#import csv
+#with open('Planilhas/CONFIRMADOS.csv', 'r') as arquivo_csv:
+#    leitor = csv.DictReader(arquivo_csv, delimiter=',')
+#    for coluna in leitor:
+#        print(coluna)
+
+
+
+========================================================================================================================
+
+confirmados = open('Planilhas/CONFIRMADOS.csv', 'r')
+    confirmados_reader = csv.reader(confirmados, delimiter = ';')
+
+    #print(f'{confirmados_reader}')
+
+    for i in confirmados_reader:
+        print(i)
+        stop = input('Entrada: ')
+
+    #nome = 'Guilherme'
+    #idade = 20
+    #altura = 1.75
+
+    #cod = struct.pack('s I f', nome.encode(), idade, altura)
+
+    #print(f'{cod}')
+    #print('Sucesso')
+
+
+
+========================================================================================================================
+
+'''df_cronograma = pd.read_csv('Planilhas/Teste2.csv')
+    #print(df_cronograma)
+
+    fig = px.timeline(df_cronograma, x_start = "Inicio", x_end = "Fim", y = "Tarefa")
+    fig.update_yaxes(autorange = "reversed")
+    fig.show()'''
+
+    '''dados_x = ['2018', '2019', '2020', '2021']
+    dados_y = [10, 20, 5, 35]
+
+    grafico1(dados_x, dados_y)
+
+    dados_x = ['2010', '2011', '2012', '2013']
+    dados_y = [5, 30, 8, 10]
+
+    grafico1(dados_x, dados_y)'''
+
+
+
+
+
+========================================================================================================================
+
+                    if (numcasos != "NUM_CASOS" and data != 'DATA'):
+
+                    casoconv = int(numcasos)
+
+                    if(cont == 0):
+                        ncc.append(casoconv)
+                        dc.append(data)
+                        cont = cont + 1
+
+                    if(cont > 0):
+                        for j in dc:
+                            if(dc[j] == data):
+                                ncc[i] = ncc[i] + casoconv
+
+                        cont = cont + 1
+
+
+
+
+========================================================================================================================
+
+            for i in tab_reader:
+
+                numcasos = i[1]
+                data = i[2]
+
+                if (numcasos != "NUM_CASOS" and data != 'DATA'):
+                    casoconv = int(numcasos)
+
+                    ncc.append(casoconv)
+                    dc.append(data)
+
+                    cont = cont + 1
+========================================================================================================================
+
+cdata = []
+            cncc = []
+
+            for i in dc:
+                if i in cdata:
+
+
+                else:
+                    cdata.append(i)
+
+            print(cdata)
+
+========================================================================================================================
+
+    '''dados_x = ['2018', '2019', '2020', '2021']
+    dados_y = [10, 20, 5, 35]
+    title = 'Teste'
+
+    grafico1(dados_x, dados_y, title)'''
+
+    '''dados_x = ['2010', '2011', '2012', '2013']
+    dados_y = [5, 30, 8, 10]
+
+    grafico1(dados_x, dados_y)'''
+
+========================================================================================================================
+
+
+'''if(m == 2):
+        print('\nMacro Região')
+
+        micros = []
+
+        m = 0
+
+        for i in tab_reader:
+            micro = i[6]
+            rp = 0
+
+            if (micro != 'Macro'):
+                if (m == 0):
+                    micros.append(micro)
+                    m = 1
+
+                if (m > 0):
+                    for j in micros:
+                        if (j == micro):
+                            rp = 1
+
+                    if (rp == 0):
+                        micros.append(micro)
+
+        a1 = 0
+        for i in micros:
+            print(f'\t{a1} - {i}')
+            a1 = a1 + 1
+
+        procura = int(input('\nDigite o número referente a macro: '))
+
+        me = micros[procura]
+
+        print(f'Gerando o gráfico de casos confirmados da macro {me}')
+
+        buscamacro(1, me)'''
+
+
+========================================================================================================================
+
+
+
+
+
+========================================================================================================================
+
+
+
+
+========================================================================================================================
